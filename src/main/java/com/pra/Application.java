@@ -12,6 +12,7 @@ import com.pra.repository.EmployeeRepository;
 
 @SpringBootApplication
 public class Application {
+	private static final String REST_URL= "";
 
 	public static void main(String[] args) {
 		int a= 10;
