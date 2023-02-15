@@ -13,7 +13,11 @@ import com.pra.repository.EmployeeRepository;
 @SpringBootApplication
 public class Application {
 
+  private Map<String,Object> cache = new HashMap<String,Object>();
+  private static final String REST_URL= "";
+
 	public static void main(String[] args) {
+		int a= 10;
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 
 		EmployeeRepository employeeRepository = context.getBean(EmployeeRepository.class);
@@ -121,6 +125,13 @@ public class Application {
 		 * maleEMployeesList.forEach(System.out::println);
 		 */
 
+	}
+
+	public void doProcess(){
+	}
+
+	// HIS-301 changes
+	public void loadData(){
 	}
 
 }
