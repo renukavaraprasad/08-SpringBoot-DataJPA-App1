@@ -12,6 +12,7 @@ import com.pra.repository.EmployeeRepository;
 
 @SpringBootApplication
 public class Application {
+	private Map<String,Object> cache = new HashMap<String,Object>();
 
 	public static void main(String[] args) {
 		int a= 10;
@@ -125,6 +126,10 @@ public class Application {
 	}
 
 	public void doProcess(){
+	}
+
+	// HIS-301 changes
+	public void loadData(){
 	}
 
 }
