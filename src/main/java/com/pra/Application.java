@@ -12,7 +12,9 @@ import com.pra.repository.EmployeeRepository;
 
 @SpringBootApplication
 public class Application {
-	private static final String REST_URL= "";
+
+  private Map<String,Object> cache = new HashMap<String,Object>();
+  private static final String REST_URL= "";
 
 	public static void main(String[] args) {
 		int a= 10;
@@ -126,6 +128,10 @@ public class Application {
 	}
 
 	public void doProcess(){
+	}
+
+	// HIS-301 changes
+	public void loadData(){
 	}
 
 }
